@@ -687,65 +687,56 @@ footer {
         font-size: 15px;
         padding-left: 10px;
     }
-    
-    
-        /* Hide the checkbox */
-        input[type="checkbox"] {
-            display: none;
-        }
-    
-        /* Style the hamburger icon */
-        .menu-toggle {
-            display: block;
-            cursor: pointer;
-            position: relative;
-            width: 30px;
-            height: 30px;
-            margin-left: 15px;
-        }
-    
-        .menu-toggle i {
-            font-size: 2rem;
-        }
-    
-        .menu-toggle:before,
-        .menu-toggle:after {
-            content: "";
-            display: block;
-            background-color: #000;
-            height: 2px;
-            width: 100%;
-            position: absolute;
-            left: 0;
-            transition: transform 0.2s ease-in-out;
-        }
-    
-        .menu-toggle:before {
-            top: 8px;
-        }
-    
-        .menu-toggle:after {
-            top: 16px;
-        }
-    
-        /* Animate the hamburger icon to an 'X' when checkbox is checked */
-        input[type="checkbox"]:checked~.menu-toggle:before {
-            transform: translateY(0px) rotate(45deg);
-        }
-    
-        input[type="checkbox"]:checked~.menu-toggle:after {
-            transform: translateY(-8px) rotate(-45deg);
-        }
-    
-        input[type="checkbox"]:checked~.menu-toggle i {
-            color: #e4ddcd;
-        }
-        .links {
-            display: none;
-        }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+    }
+    .menu-toggle i {
+        font-size: 2rem;
+    }
+    .menu-toggle:before,
+    .menu-toggle:after {
+        content: "";
+        display: block;
+        background-color: #000;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        transition: transform 0.2s ease-in-out;
+    }
+    .menu-toggle:before {
+        top: 8px;
+    }
 
+    .menu-toggle:after {
+        top: 16px;
+    }
+    input[type="checkbox"]:checked~.menu-toggle:before {
+        transform: translateY(0px) rotate(45deg);
+    }
 
+    input[type="checkbox"]:checked~.menu-toggle:after {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    input[type="checkbox"]:checked~.menu-toggle i {
+        color: #e4ddcd;
+    }
+    .links {
+        display: none;
+    }
 }
 .alert_wrapper {
     margin-top: -20px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+.bx-cart {
+    margin-left: 20px;
 }
